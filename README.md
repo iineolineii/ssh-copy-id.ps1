@@ -11,9 +11,14 @@ This utility is specifically created for Windows users because the OpenSSH clien
 - OpenSSH client installed (includes `ssh` and `ssh-keygen` utilities)
 
 ## Installation:
-Use the following command to add `ssh-copy-id` function to your $PROFILE:
+Use the following command to add `ssh-copy-id` function to your current powershell session:
 ```powershell
-echo (curl https://github.com/iineolineii/ssh-copy-id.ps1/raw/refs/heads/main/ssh-copy-id.ps1).Content >> $PROFILE
+irm https://github.com/iineolineii/ssh-copy-id.ps1/raw/refs/heads/main/ssh-copy-id.ps1 | iex
+```
+
+Additionally, you may use the follolwing command to permanently install this function:
+```powershell
+irm https://github.com/iineolineii/ssh-copy-id.ps1/raw/refs/heads/main/install.ps1 | iex
 ```
 
 ## Usage:
